@@ -13,12 +13,14 @@ body {
 header {
   background: #333333;
   grid-column: 1/4;
-  padding: 2rem;
+  padding: auto;
 }
 
 header h1 {
   color: white;
   font-weight: 400;
+  text-align: center;
+  padding: 20px;
 }
 
 nav {
