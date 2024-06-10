@@ -31,6 +31,7 @@ nav ul {
   padding: 15px;
 }
 
+
 nav ul li a {
   text-decoration: none;
   color: rgb(253, 245, 234);
@@ -39,13 +40,20 @@ nav ul li a {
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+nav a:hover {
+  color: #6aaef7; /* Change the color on hover */
+  text-decoration: underline; /* Add underline on hover */
+}
+
 main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
 .card {
-  border: 1px solid black;
+  border: 1px solid rgb(170, 170, 170);
   margin: 15px 8px;
   border-radius: 20px;
 }
@@ -66,7 +74,7 @@ main {
 }
 
 .container-1 {
-  background-color: #eaeaff;
+  background-color: #f9f9ff;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 100px;
@@ -75,7 +83,7 @@ main {
   justify-content: center;
 }
 
-.container-1 h1 {
+.container-1 h2 {
   background-color: #2216a5;
   color: white;
   text-align: center;
@@ -86,13 +94,12 @@ main {
   margin: 0;
 }
 
-.container-1 h2 {
+.container-1 h3 {
   grid-column: 1/4;
   text-align: center;
   border-bottom: 1px solid rgb(125, 137, 151);
   font-family: 'DM Serif Text', sans-serif;
   font-size: 30px;
-  padding-bottom: 10pxf;
 }
 
 .container-1 .p-venezuela {
@@ -112,7 +119,7 @@ main {
 }
 
 .container-2 {
-  background-color: #eaeaff;
+  background-color: #f9f9ff;
   display: flex;
   flex-direction: column;
   gap: 100px;
@@ -121,7 +128,7 @@ main {
   align-items: center;
 }
 
-.container-2 h1 {
+.container-2 h2 {
   background-color: #2216a5;
   color: white;
   text-align: center;
