@@ -41,8 +41,8 @@ nav ul li a {
 }
 
 nav a:hover {
-  color: #6aaef7; /* Change the color on hover */
-  text-decoration: underline; /* Add underline on hover */
+  color: #6aaef7;
+  text-decoration: underline;
 }
 
 main {
@@ -134,7 +134,7 @@ main {
   text-align: center;
   padding: 15px;
   font-family: 'DM Serif Text', sans-serif;
-  width: 95%;
+  width: 94.5%;
   grid-column: 1 /4;
   border-radius: 20px 20px 0 0;
   margin: 0;
