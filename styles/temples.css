@@ -80,7 +80,7 @@ figure img {
   height: auto;
 }
 
-figure p {
+figure figcaption {
   margin-top: 0.5rem;
 }
 
