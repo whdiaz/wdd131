@@ -104,6 +104,17 @@ section p span {
     padding: 0;
     box-sizing: border-box;
   }
+  .head-section-2 h2::after {
+    content: '';
+    display: inline-block;
+    width: 80px; 
+    height: 80px; 
+    background: url('/images/weather_clouds_sun_sunny_icon.svg') no-repeat center center;
+    background-size: contain;
+    margin-left: 20px; 
+    vertical-align: middle;
+  }
+  
   .svg {
     display: none;
   }
@@ -220,7 +231,7 @@ section p span {
   }
 
   .weather-icon {
-    display: block;
+    display: none;
     width: 100px;
     height: 100px;
     background: url('/images/weather_clouds_sun_sunny_icon.svg') no-repeat center center;
