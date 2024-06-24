@@ -131,7 +131,7 @@ section p span {
     font-size: 50px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 5px;
-    border: 1px solid var(--color-primary);
+    border: 1px solid var (--color-primary);
   }
 
   .content {
@@ -217,8 +217,12 @@ section p span {
     align-items: center;
   }
 
-  .svg {
-    max-width: 100px;
+  .weather-icon {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: url('/images/weather_clouds_sun_sunny_icon.svg') no-repeat center center;
+    background-size: contain;
   }
 
   footer {
