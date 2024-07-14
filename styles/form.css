@@ -26,6 +26,10 @@ header {
 }
 
 main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 0 2%;
   min-height: 20rem;
   color: white;
@@ -211,4 +215,18 @@ star {
 
 .wf1 input:required:valid {
   border-bottom: 4px solid green;
+}
+
+footer {
+  background: #a51616;
+  padding: 20px;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+}
+
+footer p {
+  color: #eaeaff;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 18px;
 }

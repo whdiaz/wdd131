@@ -58,3 +58,20 @@ document.addEventListener('DOMContentLoaded', function () {
   currentYear.textContent = `© ${new Date().getFullYear()}`;
   lastModified.textContent = `Last Modified: ${document.lastModified}`;
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Get the current year
+  const currentYear = new Date().getFullYear();
+
+  // Output the current year to the first paragraph in the footer
+  const yearParagraph = document.getElementById('current-year');
+  yearParagraph.textContent = `© ${currentYear} Willian Honorio Diaz Torres`;
+
+  // Get the last modified date of the document
+  const lastModified = document.lastModified;
+
+  // Output the last modified date to the second paragraph in the footer
+  const modifiedParagraph = document.getElementById('last-modified');
+  modifiedParagraph.textContent = `Last Modified: ${lastModified}`;
+});
+
