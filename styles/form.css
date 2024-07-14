@@ -1,10 +1,27 @@
+/* General Reset */
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  font-family: 'Playwrite CU', sans-serif;
 }
 
+/* Body */
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
 body {
   font-size: 16px;
   background: rgb(207, 14, 14);
@@ -19,214 +36,611 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  opacity: 10px;
 }
 
+/* Header */
 header {
   width: 100%;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0 2%;
-  min-height: 20rem;
-  color: white;
-  font-weight: normal;
-  font-style: italic;
-  width: 100%;
-  max-width: 600px;
-  margin: 20px;
-}
-
-.menu {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
   text-align: center;
-  height: auto;
-  width: 100%;
-  padding: 1rem;
-  background: rgb(207, 14, 14);
-  background: linear-gradient(
-    180deg,
-    rgba(207, 14, 14, 1) 42%,
-    rgba(253, 198, 29, 1) 69%,
-    rgba(0, 0, 0, 1) 86%
-  );
-  font-size: 20px;
 }
 
-.logo {
-  margin-top: 0;
+header .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+header .logo span {
+  color: #ff5733;
   font-weight: bold;
 }
 
-.logo span {
-  font-size: 25px;
-}
-
-.menu nav {
-  display: flex;
-  justify-content: space-around;
-}
-
-nav ul {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-nav ul li {
+header nav ul {
   list-style: none;
-  margin: 0 15px;
+  display: flex;
 }
 
-nav ul li a {
-  color: black;
+header nav ul li {
+  margin: 0 10px;
+}
+
+header nav ul li a {
+  color: #fff;
   text-decoration: none;
+  font-weight: bold;
 }
 
-.button-01 {
-  margin-top: 0;
-  align-items: center;
-}
-
-button {
-  color: aliceblue;
-  width: 80px;
-  padding: 5px;
+header .button-01 button {
+  background: #ff5733;
+  color: #fff;
   border: none;
-  text-align: center;
-  border-radius: 5px;
-  background-color: #000000;
+  padding: 10px 20px;
   cursor: pointer;
+  transition: background 0.3s ease;
 }
 
-button:hover {
-  background-color: #cf0e0e;
-  color: #000000;
-  background: linear-gradient(
-    180deg,
-    rgba(207, 14, 14, 1) 42%,
-    rgba(253, 198, 29, 1) 69%,
-    rgba(0, 0, 0, 1) 86%
-  );
-  -webkit-box-shadow: 0px 0px 5px 11px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0px 0px 5px 11px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 0px 5px 11px rgba(0, 0, 0, 0.1);
-  transition: 0.3s ease-in;
+header .button-01 button:hover {
+  background: #e04e1e;
 }
 
-.wf1 fieldset {
-  margin: 2rem 0;
-  padding: 0.5rem 2%;
-  border: none;
+/* Main */
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
-.wf1 legend,
-div {
+main h1 {
   text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
 }
 
-.tittle {
-  max-width: 400px;
+main .tittle {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #555;
 }
 
-.wf1 legend {
-  margin-left: -55px;
+/* Form */
+form {
+  display: grid;
+  gap: 20px;
 }
 
-.wf1 label {
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-size: 18px;
+  color: #333;
+  padding: 0 10px;
+}
+
+label {
   display: block;
-  padding-top: 1rem;
-  font-size: 1rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #555;
 }
 
-.wf1 div {
-  padding-top: 1rem;
-  font-size: 1rem;
-  max-width: 400px;
-}
-
-.wf1 input[type='text'],
-.wf1 input[type='date'],
-.wf1 input[type='tel'],
-.wf1 input[type='email'],
-.wf1 select,
-.wf1 input[type='number'],
-.wf1 textarea {
-  background-color: #000000;
-  display: block;
-  border: none;
-  border-radius: 10px;
-  padding: 0.75rem;
-  color: rgb(255, 255, 255);
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+input[type="email"],
+input[type="date"],
+textarea,
+select {
   width: 100%;
-  max-width: 400px;
-  margin: 3px 0px 10px 0px;
-  appearance: none;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
 }
 
-.wf1 input[type='checkbox'] {
-  margin-right: 6px;
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+textarea:focus,
+select:focus {
+  border-color: #ff5733;
+  outline: none;
 }
 
-star {
-  color: #cf0e0e;
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 10px;
 }
 
 .radio {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  max-width: 400px;
+  align-items: center;
 }
 
 .radio label {
-  width: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  font-size: 0.75rem;
-  padding-top: 0.5rem;
 }
 
-.rating input[type='radio'] {
-  display: none;
+.radio input {
+  margin-left: 10px;
 }
 
-.wf1 input[type='submit'] {
-  margin: 1 2% 2rem 2%;
-  width: 96%;
-  max-width: 400px;
-  padding: 0.8rem;
-  border-radius: 6px;
-  background-image: linear-gradient(#cf0e0e, #6f200e);
-  max-width: 400px;
-  font-size: large;
+input[type="submit"] {
+  background: #ff5733;
+  color: #fff;
   border: none;
-}
-
-.wf1 input:required {
-  border-bottom: 4px solid red;
-}
-
-.wf1 input:required:valid {
-  border-bottom: 4px solid green;
-}
-
-footer {
-  background: #a51616;
-  padding: 20px;
-  text-align: center;
-  margin: 0;
+  padding: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease;
   width: 100%;
+  font-size: 18px;
+  border-radius: 5px;
 }
 
-footer p {
-  color: #eaeaff;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+input[type="submit"]:hover {
+  background: #e04e1e;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+#current-year,
+#last-modified {
+  display: block;
+  margin-top: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  header .menu {
+      flex-direction: column;
+  }
+
+  header nav ul {
+      flex-direction: column;
+  }
+
+  header .button-01 {
+      margin-top: 10px;
+  }
+
+  form {
+      grid-template-columns: 1fr;
+  }
+
+  .radio {
+      flex-direction: column;
+  }
+
+  .radio label {
+      justify-content: space-between;
+  }
+}
+
+
+/* Header */
+header {
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+header .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+header .logo span {
+  color: #ff5733;
+  font-weight: bold;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin: 0 10px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header .button-01 button {
+  background: #ff5733;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+header .button-01 button:hover {
+  background: #e04e1e;
+}
+
+/* Main */
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+main h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+main .tittle {
+  text-align: center;
+  margin-bottom: 20px;
   font-size: 18px;
+  color: #555;
+}
+
+/* Form */
+form {
+  display: grid;
+  gap: 20px;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-size: 18px;
+  color: #333;
+  padding: 0 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #555;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+input[type="email"],
+input[type="date"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+textarea:focus,
+select:focus {
+  border-color: #ff5733;
+  outline: none;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+.radio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.radio label {
+  display: flex;
+  align-items: center;
+}
+
+.radio input {
+  margin-left: 10px;
+}
+
+input[type="submit"] {
+  background: #ff5733;
+  color: #fff;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 100%;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+  background: #e04e1e;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+#current-year,
+#last-modified {
+  display: block;
+  margin-top: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  header .menu {
+      flex-direction: column;
+  }
+
+  header nav ul {
+      flex-direction: column;
+  }
+
+  header .button-01 {
+      margin-top: 10px;
+  }
+
+  form {
+      grid-template-columns: 1fr;
+  }
+
+  .radio {
+      flex-direction: column;
+  }
+
+  .radio label {
+      justify-content: space-between;
+  }
+}
+
+
+/* Header */
+header {
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+header .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+header .logo span {
+  color: #ff5733;
+  font-weight: bold;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin: 0 10px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header .button-01 button {
+  background: #ff5733;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+header .button-01 button:hover {
+  background: #e04e1e;
+}
+
+/* Main */
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+main h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+main .tittle {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #555;
+}
+
+/* Form */
+form {
+  display: grid;
+  gap: 20px;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-size: 18px;
+  color: #333;
+  padding: 0 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #555;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+input[type="email"],
+input[type="date"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+textarea:focus,
+select:focus {
+  border-color: #ff5733;
+  outline: none;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+.radio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.radio label {
+  display: flex;
+  align-items: center;
+}
+
+.radio input {
+  margin-left: 10px;
+}
+
+input[type="submit"] {
+  background: #ff5733;
+  color: #fff;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 100%;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+  background: #e04e1e;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+#current-year,
+#last-modified {
+  display: block;
+  margin-top: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  header .menu {
+      flex-direction: column;
+  }
+
+  header nav ul {
+      flex-direction: column;
+  }
+
+  header .button-01 {
+      margin-top: 10px;
+  }
+
+  form {
+      grid-template-columns: 1fr;
+  }
+
+  .radio {
+      flex-direction: column;
+  }
+
+  .radio label {
+      justify-content: space-between;
+  }
 }
