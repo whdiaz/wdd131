@@ -1,124 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Product review form for Ferraly products. Provide your feedback and rate your experience."
-    />
-    <meta name="author" content="Willian Honorio Diaz Torres" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles/form.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Product review form for Ferraly products. Provide your feedback and rate your experience.">
+    <meta name="author" content="Willian Honorio Diaz Torres">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/form.js" defer></script>
     <title>Product Review Form</title>
-  </head>
-  <body>
-    <header>
-      <div class="menu">
+</head>
+<body>
+<header>
+    <div class="menu">
         <div class="logo"><span>F</span>erraly</div>
         <nav>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Products</a></li>
-          </ul>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+            </ul>
         </nav>
         <div class="button-01">
-          <button>Sign In</button>
+            <button>Sign In</button>
         </div>
-      </div>
-    </header>
-    <main>
-      <h1>Product Review Form</h1>
-      <div class="tittle">Please Tell us about your new car</div>
-      <form method="get" action="review.html" class="wf1">
+    </div>
+</header>
+<main>
+    <h1>Product Review Form</h1>
+    <div class="tittle">Please Tell us about your new car</div>
+    <form method="get" action="review.html" class="wf1">
         <fieldset>
-          <legend>About Car</legend>
-          <label for="model"
-            >Model <input type="text" name="model" required
-          /></label>
-          <label for="year">Year <input type="number" name="year" /></label>
-          <label for="engine"
-            >Engine
-            <select name="engine" id="engine" required>
-              <option value="">Please Select</option>
-            </select>
-          </label>
-          <div>Feature to evaluate</div>
-          <label for="confort"
-            ><input type="checkbox" name="confort" value="yes" />Comfort</label
-          >
-          <label for="performance"
-            ><input
-              type="checkbox"
-              name="performance"
-              value="yes"
-            />Performance</label
-          >
-          <label for="design"
-            ><input type="checkbox" name="design" value="yes" />Design</label
-          >
-          <label for="safety"
-            ><input type="checkbox" name="safety" value="yes" />Safety</label
-          >
-          <div>Overall Rating</div>
-          <div class="radio">
-            <label
-              ><span>☆</span
-              ><input type="radio" name="star" id="star1" value="1" required
-            /></label>
-            <label
-              ><span>&star;&star;</span
-              ><input type="radio" name="star" id="star2" value="2" required
-            /></label>
-            <label
-              ><span>&star;&star;&star;</span
-              ><input type="radio" name="star" id="star3" value="3" required
-            /></label>
-            <label
-              ><span>&star;&star;&star;&star;</span
-              ><input type="radio" name="star" id="star4" value="4" required
-            /></label>
-            <label
-              ><span>&star;&star;&star;&star;&star;</span
-              ><input type="radio" name="star" id="star5" value="5" required
-            /></label>
-          </div>
-          <label for="textarea"
-            >Comment<textarea
-              name="textarea"
-              id="textarea"
-              rows="5"
-              cols="33"
-            ></textarea>
-          </label>
+            <legend>About Car</legend>
+            <label for="model">Model <input type="text" id="model" name="model" required></label>
+            <label for="year">Year <input type="number" id="year" name="year"></label>
+            <label for="engine">Engine
+                <select name="engine" id="engine" required>
+                    <option value="">Please Select</option>
+                </select>
+            </label>
+            <div>Feature to evaluate</div>
+            <label for="comfort"><input type="checkbox" id="comfort" name="comfort" value="yes">Comfort</label>
+            <label for="performance"><input type="checkbox" id="performance" name="performance" value="yes">Performance</label>
+            <label for="design"><input type="checkbox" id="design" name="design" value="yes">Design</label>
+            <label for="safety"><input type="checkbox" id="safety" name="safety" value="yes">Safety</label>
+            <div>Overall Rating</div>
+            <div class="radio">
+                <label for="star1"><span>☆</span><input type="radio" name="star" id="star1" value="1" required></label>
+                <label for="star2"><span>&star;&star;</span><input type="radio" name="star" id="star2" value="2" required></label>
+                <label for="star3"><span>&star;&star;&star;</span><input type="radio" name="star" id="star3" value="3" required></label>
+                <label for="star4"><span>&star;&star;&star;&star;</span><input type="radio" name="star" id="star4" value="4" required></label>
+                <label for="star5"><span>&star;&star;&star;&star;&star;</span><input type="radio" name="star" id="star5" value="5" required></label>
+            </div>
+            <label for="textarea">Comment<textarea name="textarea" id="textarea" rows="5" cols="33"></textarea></label>
         </fieldset>
         <fieldset>
-          <legend>About Client</legend>
-          <label for="name"
-            >Name <input type="text" name="name" id="name"
-          /></label>
-          <label for="phone"
-            >Phone Number <input type="tel" name="phone" id="phone"
-          /></label>
-          <label for="email"
-            >Email <input type="email" name="email" id="email" required
-          /></label>
-          <label for="date"
-            >Date of purchase <input type="date" name="date" id="date"
-          /></label>
+            <legend>About Client</legend>
+            <label for="name">Name <input type="text" id="name" name="name"></label>
+            <label for="phone">Phone Number <input type="tel" id="phone" name="phone"></label>
+            <label for="email">Email <input type="email" id="email" name="email" required></label>
+            <label for="date">Date of purchase <input type="date" id="date" name="date"></label>
         </fieldset>
-        <input type="submit" value="Send My Rating Now" />
-      </form>
-    </main>
-    <footer>
-      <p id="current-year">&copy;</p>
-      <p id="last-modified"></p>
-    </footer>
-  </body>
+        <input type="submit" value="Send My Rating Now">
+    </form>
+</main>
+<footer>
+    <p id="current-year">&copy;</p>
+    <p id="last-modified"></p>
+</footer>
+</body>
 </html>
