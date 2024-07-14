@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/form.css" />
+    <script src="scripts/form.js"></script>
+    <title>Form</title>
+  </head>
+  <body>
+    <header>
+      <div class="menu">
+        <div class="logo"><span>F</span>erraly</div>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+          </ul>
+        </nav>
+        <div class="button-01">
+          <button>Sign In</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="tittle">Please Tell us about your new car</div>
+      <form method="get" action="review.html" class="wf1">
+        <fieldset>
+          <legend>About Car</legend>
+          <label for=""
+            >Model <input type="text" name="model" required
+          /></label>
+          <label for="">Year <input type="number" name="year" /></label>
+          <label for=""
+            >Engine
+            <select name="engine" id="" required>
+              <option value="">Please Select</option>
+              <option value="v8">V8</option>
+              <option value="v6">V6</option>
+              <option value="electric">Electric</option>
+            </select></label
+          >
+          <div>Feature to evaluate</div>
+          <label for=""
+            ><input type="checkbox" name="confort" value=" yes" />Confort</label
+          >
+          <label for=""
+            ><input
+              type="checkbox"
+              name="performance"
+              value=" yes"
+            />Performance</label
+          >
+          <label for=""
+            ><input type="checkbox" name="design" value=" yes" />Design</label
+          >
+          <div>Overal Rating</div>
+          <div class="radio">
+            <label
+              ><span>☆</span
+              ><input type="radio" name="star" id="star1" required
+            /></label>
+            <label
+              ><span>&star;&star;</span
+              ><input type="radio" name="star" id="star2" required
+            /></label>
+            <label
+              ><span>&star;&star;&star;</span
+              ><input type="radio" name="star" id="star3" required
+            /></label>
+            <label
+              ><span>&star;&star;&star;&star;</span
+              ><input type="radio" name="star" id="star4" required
+            /></label>
+            <label
+              ><span>&star;&star;&star;&star;&star;</span
+              ><input type="radio" name="star" id="star5" required
+            /></label>
+          </div>
+          <label for="texarea"
+            >Comment
+            <textarea name="textarea" id="" rows="5" cols="33"></textarea>
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>About Client</legend>
+          <label for="">Name <input type="text" /></label>
+          <label for="">Number Phone <input type="tel" /></label>
+          <label for="">Email <input type="email" required /></label>
+          <label for="">Date of purchase <input type="date" /></label>
+        </fieldset>
+        <input type="submit" value="Send My Rating Now" />
+      </form>
+    </main>
+    <footer>
+      <p id="current-year">&copy;</p>
+      <p id="last-modified"></p>
+    </footer>
+  </body>
+</html>
